@@ -1,20 +1,21 @@
 import Topper from '../images/zapa-topper.jpg';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return(
         <div>
            <header>
-               <a href='#'>
+               <Link to="/">
                    <div className="logo">
                         <img src={Topper} alt="logo" width="150" />
                    </div>
-               </a>
+               </Link>
                <ul>
                    <li>
-                       <a href="#">INICIO</a>
+                       <Link to="/">INICIO</Link>
                    </li>
                    <li>
-                       <a href="#">PRODUCTOS</a>
+                       <Link to="/productos">PRODUCTOS</Link>
                    </li>
                </ul>
                <div className="cart">
